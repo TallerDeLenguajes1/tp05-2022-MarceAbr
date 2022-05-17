@@ -9,5 +9,5 @@ Console.WriteLine("Indique un numero ");
 string numero1 = Console.ReadLine();
 Console.WriteLine("Indique otro numero ");
 string numero2 = Console.ReadLine();
-int resultado = Convert.ToInt32(numero1) + Convert.ToInt32(numero2);
+double resultado = Convert.ToDouble(numero1) + Convert.ToDouble(numero2);
 Console.WriteLine("El resultado es: " + resultado);
