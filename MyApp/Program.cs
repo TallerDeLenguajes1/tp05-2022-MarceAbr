@@ -1,6 +1,6 @@
 ﻿//Ejercicio 2 - Calculadora V2
 int continuar2, valor2;
-double numero3, numero4, numero5, resutado2;
+double numero3, numero4, numero5;
 do
 {
     Console.WriteLine("\nIndique la operacion que desea realizar: 1-VALOR ABS / 2-POTENCIA / 3-RAIZ / 4-SENO / 5-COS / 6-PARTE ENTERA: ");
@@ -11,8 +11,7 @@ do
     switch (valor2)
     {
         case 1:
-            resutado2 = Math.Abs(numero3);
-            Console.WriteLine("El valor absoluto del numero es: " + resutado2);
+            Console.WriteLine("El valor absoluto del numero es: " + Math.Abs(numero3));
             break;
         case 2:
             Console.WriteLine("El cuadrado del numero es: " + Math.Pow(numero3,2));
@@ -38,16 +37,16 @@ Console.WriteLine("\nIndique 2 numeros para comprobar el mayor y menor");
 Console.WriteLine("\nIndique el primer numero: ");
 numero4 = double.Parse(Console.ReadLine());
 Console.WriteLine("Indique el segundo numero: ");
-numero3 = double.Parse(Console.ReadLine());
+numero5 = double.Parse(Console.ReadLine());
 
 Console.WriteLine("\nIndique lo que desea: 1-MAYOR / 2-MENOR: ");
 valor2 = int.Parse(Console.ReadLine());
 
 if (valor2 == 1)
 {
-    Console.WriteLine("El mayor entre ambos numeros es: " + max(numero4, numero3));
+    Console.WriteLine("El mayor entre ambos numeros es: " + max(numero4, numero5));
 } else {
-    Console.WriteLine("El mayor entre ambos numeros es: " + min(numero4, numero3));
+    Console.WriteLine("El mayor entre ambos numeros es: " + min(numero4, numero5));
 }
 
 double max(double num1, double num2)
